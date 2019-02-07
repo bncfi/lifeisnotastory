@@ -346,7 +346,7 @@ body {
               animation: bounce-down 2s 50 both ease-out; }
   .reveal .controls[data-controls-back-arrows="faded"] .navigate-left.enabled,
   .reveal .controls[data-controls-back-arrows="faded"] .navigate-up.enabled {
-    opacity: 0.9; }
+    opacity: 0.3; }
     .reveal .controls[data-controls-back-arrows="faded"] .navigate-left.enabled:hover,
     .reveal .controls[data-controls-back-arrows="faded"] .navigate-up.enabled:hover {
       opacity: 1; }
@@ -356,7 +356,7 @@ body {
     visibility: hidden; }
   .reveal .controls .enabled {
     visibility: visible;
-    opacity: 0.9;
+    opacity: 0.3;
     cursor: pointer;
     -webkit-transform: none;
             transform: none; }
@@ -443,14 +443,14 @@ body {
 
 .reveal .progress:after {
   content: '';
-  display: block;
+  display: none;/*block;*/
   position: absolute;
   height: 10px;
   width: 100%;
   top: -10px; }
 
 .reveal .progress span {
-  display: block;
+  display: none;/*block;*/
   height: 100%;
   width: 0px;
   background-color: currentColor;
