@@ -25,6 +25,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
 	</head>
 	<body>
 		<div class="reveal">
@@ -34,7 +35,13 @@
 						<h1 style="color:#9999cc;">RESCUE FROM THE ABSURD</h1>
 					</section>
 					<section data-background="absurd/taustakuvio.jpg">
-						<audio data-autoplay src="absurd/TIMEISINEVITABLE_2.mp3"></audio>
+						<!--
+						<audio src="absurd/TIMEISINEVITABLE_2.mp3" id="absurd1" onended="audioEnded('playAbsurd1','pauseAbsurd1')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd1" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd1','playAbsurd1','pauseAbsurd1')">
+							<img id="pauseAbsurd1" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd1','playAbsurd1','pauseAbsurd1')">
+						</div>
+					-->
 						<p>
 							life is the state that follows birth, and precedes death<br>
 							life is the state of being alive and living<br>
@@ -48,42 +55,75 @@
 							in video games, life is one of the player’s chances to play and it is lost when a mistake is made<br>
 						</p>
 					</section>
-					<section data-background-video="absurd/absurd_1_intro.mp4">
+					<section data-background="absurd/taustakuvio.jpg"> <!--  data-background-video="absurd/absurd_1_intro.mp4" -->
+						 <video width="100%" height="100%" controls>
+							 <source src="absurd/absurd_1_intro.mp4" type="video/mp4">
+						 </video>
 					</section>
 					<section data-background="absurd/absurd_kuva3.jpg">
-						<audio data-autoplay src="absurd/absurd_3_dream.mp3"></audio>
+						<audio src="absurd/absurd_3_dream.mp3" id="absurd3" onended="audioEnded('playAbsurd3','pauseAbsurd3')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd3" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd3','playAbsurd3','pauseAbsurd3')">
+							<img id="pauseAbsurd3" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd3','playAbsurd3','pauseAbsurd3')">
+						</div>
 					</section>
 					<section data-background="absurd/absurd_kuva4.jpg">
-						<audio data-autoplay src="absurd/absurd_4_need.mp3"></audio>
+						<audio src="absurd/absurd_4_need.mp3" id="absurd4" onended="audioEnded('playAbsurd4','pauseAbsurd4')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd4" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd4','playAbsurd4','pauseAbsurd4')">
+							<img id="pauseAbsurd4" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd4','playAbsurd4','pauseAbsurd4')">
+						</div>
 					</section>
-					<section data-background-video="absurd/absurd_5_star.mp4">
+					<section data-background="absurd/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="absurd/absurd_5_star.mp4" type="video/mp4">
+						</video>
 					</section>
 					<section data-background="absurd/absurd_kuva6.jpg">
 						<p>
-							at some point of the lecture you had fell asleep<br>
+							at some point of the lecture you had fallen asleep<br>
 							and I felt a bit disappointed<br>
 							i had expected some gratitude<br>
 							<br>
 							an expectation is the prospect of the future<br>
-							it grounds upon<br>
-							which something excellent is expected to occur<br>
+							it is the grounds upon which<br>
+							something excellent is expected to occur<br>
 							it is the act or state of expecting<br>
 							or looking forward to an event as about to happen<br>
 						</p>
 					</section>
 					<section data-background="absurd/taustakuvio.jpg">
-						<audio data-autoplay src="absurd/absurd_7_fight.mp3"></audio>
+						<audio src="absurd/absurd_7_fight.mp3" id="absurd7" onended="audioEnded('playAbsurd7','pauseAbsurd7')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd7" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd7','playAbsurd7','pauseAbsurd7')">
+							<img id="pauseAbsurd7" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd7','playAbsurd7','pauseAbsurd7')">
+						</div>
 					</section>
 					<section data-background="absurd/absurd_kuva8.jpg">
-						<audio data-autoplay src="absurd/absurd_8_ikepton.mp3"></audio>
+						<audio src="absurd/absurd_8_ikepton.mp3" id="absurd8" onended="audioEnded('playAbsurd8','pauseAbsurd8')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd8" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd8','playAbsurd8','pauseAbsurd8')">
+							<img id="pauseAbsurd8" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd8','playAbsurd8','pauseAbsurd8')">
+						</div>
 					</section>
 					<section data-background="absurd/absurd_kuva9.jpg">
-						<audio data-autoplay src="absurd/absurd_9_whenthelecture.mp3"></audio>
+						<audio src="absurd/absurd_9_whenthelecture.mp3" id="absurd9" onended="audioEnded('playAbsurd9','pauseAbsurd9')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd9" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd9','playAbsurd9','pauseAbsurd9')">
+							<img id="pauseAbsurd9" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd9','playAbsurd9','pauseAbsurd9')">
+						</div>
 					</section>
 					<section data-background="absurd/absurd_kuva10.jpg">
-						<audio data-autoplay src="absurd/absurd_10_war.mp3"></audio>
+						<audio src="absurd/absurd_10_war.mp3" id="absurd10" onended="audioEnded('playAbsurd10','pauseAbsurd10')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd10" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd10','playAbsurd10','pauseAbsurd10')">
+							<img id="pauseAbsurd10" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd10','playAbsurd10','pauseAbsurd10')">
+						</div>
 					</section>
-					<section data-background-video="absurd/absurd_11_wall.mp4">
+					<section data-background="absurd/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="absurd/absurd_11_wall.mp4" type="video/mp4">
+						</video>
 					</section>
 					<section data-background="absurd/taustakuvio.jpg">
 						<p>
@@ -104,36 +144,45 @@
 						</p>
 					</section>
 					<section data-background="absurd/absurd_kuva13.jpg">
-						<audio data-autoplay src="absurd/absurd_13_cat.mp3"></audio>
+						<audio src="absurd/absurd_13_cat.mp3" id="absurd13" onended="audioEnded('playAbsurd13','pauseAbsurd13')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd13" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd13','playAbsurd13','pauseAbsurd13')">
+							<img id="pauseAbsurd13" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd13','playAbsurd13','pauseAbsurd13')">
+						</div>
 					</section>
 					<section data-background="absurd/absurd_kuva14.jpg">
-						<audio data-autoplay src="absurd/absurd_14_imetthisgirl.mp3"></audio>
+						<audio src="absurd/absurd_14_imetthisgirl.mp3" id="absurd14" onended="audioEnded('playAbsurd14','pauseAbsurd14')"></audio>
+						<div class="audioControl">
+							<img id="playAbsurd14" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','absurd14','playAbsurd14','pauseAbsurd14')">
+							<img id="pauseAbsurd14" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','absurd14','playAbsurd14','pauseAbsurd14')">
+						</div>
 					</section>
 				</section>
-				<section><!-- MOUNTAINS -->
+				<section data-start-indexv="1"><!-- MOUNTAINS -->
 					<section data-background="graf/patterns/taustakuvioaloitus.jpg">
-					<p>
-						a story is a report of connected events<br>
-						a story is presented in a sequence of written or spoken words<br>
-						and /or still or moving images<br>
-						evidence strongly suggests that humans in all cultures<br>
-						come to cast their own identity in some sort of narrative form<br>
-						stories exist somewhere between fiction and truth,<br>
-						everywhere and nowhere<br>
-						why death is the natural end of the story?<br>
-						it is to give value to life<br><br><br>
+
+						<p>
+							a story is a report of connected events<br>
+							a story is presented in a sequence of written or spoken words<br>
+							and /or still or moving images<br>
+							evidence strongly suggests that humans in all cultures<br>
+							come to cast their own identity in some sort of narrative form<br>
+							stories exist somewhere between fiction and truth,<br>
+							everywhere and nowhere<br>
+							why death is the natural end of the story?<br>
+							it is to give value to life<br><br><br>
 
 
-						Story & design: Minna-Kaisa Kallinen<br>
-						Programming: Hermanni Keko<br>
-						Music credits:<br>
-						A Rescue from the absurd - made by Minna-Kaisa Kallinen, except the beat which is from ’Don’t kill the animals’, made by Nina Hagen & Lene Lovitch<br>
-						Apples and plastic bags - made by Maanalle (Minna-Kaisa Kallinen & Juuso Paaso) except the opening song ’La Giara di Gesturi’ made by Gigi Masin<br>
-						Mountain - made by Minna-Kaisa Kallinen, except the beat made by Samuli Tanner<br><br>
+							Story & design: Minna-Kaisa Kallinen<br>
+							Programming: Hermanni Keko<br>
+							Music credits:<br>
+							A Rescue from the absurd - made by Minna-Kaisa Kallinen, except the beat which is from ’Don’t kill the animals’, made by Nina Hagen & Lene Lovitch<br>
+							Apples and plastic bags - made by Maanalle (Minna-Kaisa Kallinen & Juuso Paaso) except the opening song ’La Giara di Gesturi’ made by Gigi Masin<br>
+							Mountain - made by Minna-Kaisa Kallinen, except the beat made by Samuli Tanner<br><br>
 
-						Life is not a story has been supported by Arts Promotion Center Finland
-						<img src="graf/symbols/taike.png" class="plainZ" width="30%" height="30%">
-					</p>
+							Life is not a story has been supported by Arts Promotion Center Finland
+							<img src="graf/symbols/taike.png" class="plainZ" width="30%" height="30%">
+						</p>
 					</section>
 					<section data-background="graf/patterns/taustakuvioaloitus.jpg">
 						<img src="graf/symbols/logo.gif" class="plainZ">
@@ -165,27 +214,47 @@
 						</p>
 					</section>
 					<section data-background="mountain/taustakuvio.jpg">
-						<video height="640" width="240" data-autoplay>
-							<source src="mountain/mountainman.mp4" type="video/mp4"/>
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountainman.mp4" type="video/mp4">
 						</video>
 					</section>
 					<section data-background="mountain/mountain_kuvakollaasi1.jpg">
-						<audio data-autoplay src="mountain/loop.mp3"></audio>
+						<audio src="mountain/loop.mp3" id="mountain3" onended="audioEnded('playMountain3','pauseMountain3')"></audio>
+						<div class="audioControl">
+							<img id="playMountain3" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','mountain3','playMountain3','pauseMountain3')">
+							<img id="pauseMountain3" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','mountain3','playMountain3','pauseMountain3')">
+						</div>
 					</section>
 					<section data-background="mountain/taustakuvio.jpg">
-						<audio data-autoplay src="mountain/if_i_make_you.mp3"></audio>
+						<audio src="mountain/if_i_make_you.mp3" id="mountain4" onended="audioEnded('playMountain4','pauseMountain4')"></audio>
+						<div class="audioControl">
+							<img id="playMountain4" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','mountain4','playMountain4','pauseMountain4')">
+							<img id="pauseMountain4" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','mountain4','playMountain4','pauseMountain4')">
+						</div>
 					</section>
 					<section data-background="mountain/mountainkuva2.jpg">
 					</section>
 					<section data-background="mountain/mountainkuva4.jpg">
 					</section>
-					<section data-background-video="mountain/mountain_v1.mp4">
+					<section data-background="mountain/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountain_v1.mp4" type="video/mp4">
+						</video>
 					</section>
-					<section data-background-video="mountain/mountain_v2.mp4">
+					<section data-background="mountain/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountain_v2.mp4" type="video/mp4">
+						</video>
 					</section>
-					<section data-background-video="mountain/mountain_v3.mp4">
+					<section data-background="mountain/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountain_v3.mp4" type="video/mp4">
+						</video>
 					</section>
-					<section data-background-video="mountain/mountain_v4.mp4">
+					<section data-background="mountain/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountain_v4.mp4" type="video/mp4">
+						</video>
 					</section>
 					<section data-background="mountain/mountain_kuvakollaasi3.jpg">
 					</section>
@@ -218,7 +287,10 @@
 							it is ok<br>
 						</p>
 					</section>
-					<section data-background-video="mountain/mountainloppu_640x360.mp4">
+					<section data-background="mountain/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="mountain/mountainloppu_640x360.mp4" type="video/mp4">
+						</video>
 					</section>
 				</section>
 				<section data-state="rightmost"><!-- APPLES-->
@@ -228,7 +300,11 @@
 					<section data-background="apples/apples_s1.jpg">
 					</section>
 					<section data-background="apples/apples_s2.jpg">
-						<audio data-autoplay src="apples/intro_apple1.mp3"></audio>
+						<audio src="apples/intro_apple1.mp3" id="apples2" onended="audioEnded('playApples2','pauseApples2')"></audio>
+						<div class="audioControl">
+							<img id="playApples2" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','apples2','playApples2','pauseApples2')">
+							<img id="pauseApples2" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','apples2','playApples2','pauseApples2')">
+						</div>
 					</section>
 					<section data-background="apples/taustakuvio.jpg">
 						<p>
@@ -251,10 +327,18 @@
 					</p>
 					</section>
 					<section data-background="apples/apples_s4.jpg">
-						<audio data-autoplay src="apples/apples4_iremember.mp3"></audio>
+						<audio src="apples/apples4_iremember.mp3" id="apples4" onended="audioEnded('playApples4','pauseApples4')"></audio>
+						<div class="audioControl">
+							<img id="playApples4" class="playbutton" src="graf/symbols/playbuttonwhite.svg" onclick="togglePlay('play','apples4','playApples4','pauseApples4')">
+							<img id="pauseApples4" class="pausebutton" src="graf/symbols/pausebuttonwhite.svg" onclick="togglePlay('pause','apples4','playApples4','pauseApples4')">
+						</div>
 					</section>
 					<section data-background="apples/apples_s5.jpg">
-						<audio data-autoplay src="apples/apples5_afriendofmine.mp3"></audio>
+						<audio src="apples/apples5_afriendofmine.mp3" id="apples5" onended="audioEnded('playApples5','pauseApples5')"></audio>
+						<div class="audioControl">
+							<img id="playApples5" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','apples5','playApples5','pauseApples5')">
+							<img id="pauseApples5" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','apples5','playApples5','pauseApples5')">
+						</div>
 					</section>
 					<section data-background="apples/taustakuvio.jpg">
 						<p>
@@ -277,15 +361,30 @@
 					<section data-background="apples/apples_s7.jpg">
 					</section>
 					<section data-background="apples/apples_s8.jpg">
-						<audio data-autoplay src="apples/apples8_thepresident.mp3"></audio>
+						<audio src="apples/apples8_thepresident.mp3" id="apples8" onended="audioEnded('playApples8','pauseApples8')"></audio>
+						<div class="audioControl">
+							<img id="playApples8" class="playbutton" src="graf/symbols/playbuttonwhite.svg" onclick="togglePlay('play','apples8','playApples8','pauseApples8')">
+							<img id="pauseApples8" class="pausebutton" src="graf/symbols/pausebuttonwhite.svg" onclick="togglePlay('pause','apples8','playApples8','pauseApples8')">
+						</div>
 					</section>
 					<section data-background="apples/appleskuva9sivu.jpg">
-						<audio data-autoplay src="apples/apples9_irememberastory.mp3"></audio>
+						<audio src="apples/apples9_irememberastory.mp3" id="apples9" onended="audioEnded('playApples9','pauseApples9')"></audio>
+						<div class="audioControl">
+							<img id="playApples9" class="playbutton" src="graf/symbols/playbuttonwhite.svg" onclick="togglePlay('play','apples9','playApples9','pauseApples9')">
+							<img id="pauseApples9" class="pausebutton" src="graf/symbols/pausebuttonwhite.svg" onclick="togglePlay('pause','apples9','playApples9','pauseApples9')">
+						</div>
 					</section>
-					<section  data-background-video="apples/apples1.mp4">
+					<section  data-background="apples/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="apples/apples1.mp4" type="video/mp4">
+						</video>
 					</section>
 					<section data-background="apples/apples_s11.jpg">
-						<audio data-autoplay src="apples/apples11_organic.mp3"></audio>
+						<audio src="apples/apples11_organic.mp3" id="apples11" onended="audioEnded('playApples11','pauseApples11')"></audio>
+						<div class="audioControl">
+							<img id="playApples11" class="playbutton" src="graf/symbols/playbutton.svg" onclick="togglePlay('play','apples11','playApples11','pauseApples11')">
+							<img id="pauseApples11" class="pausebutton" src="graf/symbols/pausebutton.svg" onclick="togglePlay('pause','apples11','playApples11','pauseApples11')">
+						</div>
 					</section>
 					<section data-background="apples/taustakuvio.jpg">
 						<p>
@@ -300,10 +399,17 @@
 							“i wasn’t in any trouble, everything was fine”<br>
 						</p>
 					</section>
-					<section  data-background-video="apples/apples_s13_1280x720.mp4">
+					<section data-background="apples/taustakuvio.jpg">
+						<video width="100%" height="100%" controls>
+							<source src="apples/apples_s13_1280x720.mp4" type="video/mp4">
+						</video>
 					</section>
 					<section data-background="apples/apples_s13.jpg">
-						<audio data-autoplay src="apples/apples13_theysaythat.mp3"></audio>
+						<audio src="apples/apples13_theysaythat.mp3" id="apples13" onended="audioEnded('playApples13','pauseApples13')"></audio>
+						<div class="audioControl">
+							<img id="playApples13" class="playbutton" src="graf/symbols/playbuttonwhite.svg" onclick="togglePlay('play','apples13','playApples13','pauseApples13')">
+							<img id="pauseApples13" class="pausebutton" src="graf/symbols/pausebuttonwhite.svg" onclick="togglePlay('pause','apples13','playApples13','pauseApples13')">
+						</div>
 					</section>
 				</section>
 			</div>
@@ -313,10 +419,38 @@
 		<script src="node_modules/reveal.js/js/reveal.js"></script>
 
 		<script>
+			function togglePlay(state,idAudio, idPlay, idPause) {
+	    var audio = document.getElementById(idAudio);
+	    var playBtn  = document.getElementById(idPlay);
+			console.log(playBtn);
+	    var pauseBtn = document.getElementById(idPause);
+
+	    if (state == 'play') {
+	        audio.play();
+	        playBtn.style.display = 'none';
+	        pauseBtn.style.display = 'inline-block';
+	    }else{
+	        audio.pause();
+	        playBtn.style.display = 'inline-block';
+	        pauseBtn.style.display = 'none';
+	    }
+		}
+			function audioEnded(idPlay, idPause) {
+				var pauseBtn = document.getElementById(idPause);
+		    var playBtn  = document.getElementById(idPlay);
+				playBtn.style.display = 'inline-block';
+				pauseBtn.style.display = 'none';
+			}
+		</script>
+
+		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				autoPlayMedia: null,
+				hideAddressBar: true,
+				progress: false,
 				dependencies: [
 					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
 					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },

@@ -47,6 +47,14 @@ body {
   background-color: #fff;
   color: #000; }
 
+
+audio {
+  display:none;}
+
+
+video {
+  object-fit: fill;}
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
@@ -356,7 +364,7 @@ body {
     visibility: hidden; }
   .reveal .controls .enabled {
     visibility: visible;
-    opacity: 0.3;
+    opacity: 0.4;
     cursor: pointer;
     -webkit-transform: none;
             transform: none; }

@@ -21,6 +21,8 @@ body {
   /*background-image: url("graf/patterns/bgpattern.png");*/
   background-repeat: repeat;}
 
+
+
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 20px;
@@ -41,6 +43,8 @@ body {
 .reveal .slides section > section {
   line-height: 1.3;
   font-weight: inherit; }
+
+
 
 /*********************************************
  * HEADERS
@@ -82,10 +86,21 @@ body {
 .reveal p {
   margin: 1em;
   line-height: 1.3;
+  /*font-size: 2vw; */
   font-family: 'Dosis', sans-serif;
-
 }
 
+@media screen and (max-width: 320px) {
+  .reveal p {
+    font-size: 30px;
+  }
+}
+
+.audioControl {
+  text-align:center;
+  position: relative;
+  border: medium solid green;
+}
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
@@ -245,6 +260,24 @@ body {
 .reveal section img.plain {
   border: 0;
   box-shadow: none; }
+
+.reveal section img.playbutton {
+  display:inline-block;
+  text-align:center;
+  border-style: none;
+  box-shadow: none;
+  width: 5%;
+  height: 5%;
+  opacity: 0.5;}
+
+.reveal section img.pausebutton {
+  display:none;
+  text-align: center;
+  border-style: none;
+  box-shadow: none;
+  width: 5%;
+  height: 5%;
+  opacity: 0.5;}
 
 .reveal section img.plainZ {
   border: 0;
